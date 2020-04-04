@@ -7,3 +7,6 @@ int value = Integer.valueOf(valueAsString);
 System.out.println(value);
 
 Same thing for doubles and booleans.
+
+--------------------
+Practice a bit with boolean variables.

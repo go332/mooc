@@ -5,3 +5,5 @@ String valueAsString = "42";
 int value = Integer.valueOf(valueAsString);
 
 System.out.println(value);
+
+Same thing for doubles and booleans.

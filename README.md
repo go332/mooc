@@ -1,4 +1,4 @@
-# mooc notes  
+# mooc notes  https://www.mooc.fi/en
 The Integer.valueOf command converts a string to an integer. It takes the string containing the value to be converted as a parameter.
 
 String valueAsString = "42";
@@ -10,3 +10,18 @@ Same thing for doubles and booleans.
 
 --------------------
 Practice a bit with boolean variables.
+---------------------
+Ending a Loop
+The loop statement can be broken out of with command 'break'. When a computer executes the command 'break', the program execution moves onto the next command following the loop block.
+int number = 1;
+
+while (true) {
+    System.out.println(number);
+    if (number >= 5) {
+        break;
+    }
+
+    number = number + 1;
+}
+
+System.out.println("Ready!");

@@ -30,3 +30,5 @@ while (true) {
 
     System.out.println("Your input was " + number);
 }
+----------------------------------------
+ the computation executed after the loop has ended has been implemented inside of the loop: This approach is not recommended as it can easily lead to very complex program structure.

@@ -32,3 +32,19 @@ while (true) {
 }
 ----------------------------------------
  the computation executed after the loop has ended has been implemented inside of the loop: This approach is not recommended as it can easily lead to very complex program structure.
+Scanner reader = new Scanner(System.in);
+
+// Create variables needed for the loop
+
+while (true) {
+    // read input
+
+    // end the loop -- break
+
+    // check for invalid input -- continue
+
+    // handle valid input
+}
+
+// functionality to execute after the loop ends
+In other words, the program structure is cleaner if the things to be done after the loop ends are placed outside of it.

@@ -48,3 +48,8 @@ while (true) {
 
 // functionality to execute after the loop ends
 In other words, the program structure is cleaner if the things to be done after the loop ends are placed outside of it.
+------------------------------
+Execution of Method Calls and the Call Stack
+How does the computer remember where to return after the execution of a method?
+
+The environment that executes Java source code keeps track of the method being executed in the call stack. The call stack contains frames, each of which includes information about a specific method's internal variables and their values. When a method is called, a new frame containing its variables is created in the call stack. When the execution of a method ends, the frame relating to a method is removed from the call stack, which leads to execution resuming at the previous method of the stack.

@@ -11,17 +11,22 @@ Same thing for doubles and booleans.
 --------------------
 Practice a bit with boolean variables.
 ---------------------
-Ending a Loop
+Ending a Loop//continue a loop
 The loop statement can be broken out of with command 'break'. When a computer executes the command 'break', the program execution moves onto the next command following the loop block.
-int number = 1;
+Scanner scanner = new Scanner(System.in);
 
 while (true) {
-    System.out.println(number);
-    if (number >= 5) {
+    System.out.println("Input positive numbers.");
+    int number = Integer.valueOf(scanner.nextLine());
+
+    if (number == 0) {
         break;
     }
 
-    number = number + 1;
-}
+    if (number < 0) {
+        System.out.println("Unfit number! Try again.");
+        continue;
+    }
 
-System.out.println("Ready!");
+    System.out.println("Your input was " + number);
+}

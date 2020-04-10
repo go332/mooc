@@ -67,3 +67,7 @@ The reference of the array object is actually information about the location of 
 
 The size of an int variable in java is 32 bits. One bit is reserved for the sign, so the largest possible number to present in int is 231-1. When you create an int array of 4 elements, 4 * 32 bits of memory is allocated to hold the integers. When you access array[2], 32 bits are read starting from beginning of the array + 2 * 32 bits.
 Some programming languages try to make sure that the programmer doesn't go "in the wrong area". If java didn't cause the exception when we say array[-1], we would find the data located just before the array in the memory of the program. In such case there wouldn't be anything preventing us from writing a program reading the whole memory reserved for the program.
+
+---------------------------
+Splitting a String
+You can split a string to multiple pieces with the split-method of the String class. The method takes as a parameter a string denoting the place around which the string should be split. The split method returns an array of the resulting sub-parts. In the example below, the string has been split around a space
